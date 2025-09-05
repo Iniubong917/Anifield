@@ -1,17 +1,33 @@
-# Sweet Delights - Premium Confectionary 🍭
+# Anifield - Nigeria's Sweet Paradise 🇳🇬🍭
 
-A beautiful, modern confectionary web application showcasing premium chocolates, gummies, and artisan candies. Built with React, TypeScript, and Tailwind CSS.
+A beautiful, modern confectionary web application showcasing traditional Nigerian sweets alongside international favorites. Built with React, TypeScript, and Tailwind CSS, designed specifically for the Nigerian market.
 
-![Sweet Delights](https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=800)
+![Anifield](https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=800)
 
 ## ✨ Features
 
-- **Premium Product Showcase** - Beautiful product cards with hover animations
-- **Responsive Design** - Optimized for all devices and screen sizes
-- **Modern UI/UX** - Elegant gradients and micro-interactions
-- **Product Categories** - Chocolates, Gummies, Hard Candies, and Gift Boxes
-- **Special Offers** - Dynamic promotional banners
-- **Brand Storytelling** - Company history and values section
+- **Nigerian-Focused Design** - Tailored for Nigerian customers with local preferences
+- **Traditional & Modern Sweets** - From Agbon and Chin Chin to premium chocolates
+- **Naira Pricing** - All prices displayed in Nigerian Naira (₦)
+- **Nationwide Delivery** - Coverage across all 36 states and FCT
+- **Local Payment Methods** - Card payments and bank transfers
+- **Mobile-First Design** - Optimized for Nigerian mobile users
+- **Cultural Integration** - Nigerian colors, language, and cultural elements
+
+## 🍬 Product Categories
+
+### Traditional Nigerian Sweets
+- **Coconut Candy (Agbon)** - Traditional coconut-based sweets
+- **Chin Chin Bites** - Sweet crunchy Nigerian snacks
+- **Kuli Kuli Candy** - Groundnut-based sweet treats
+- **Sweet Plantain Chips** - Caramelized plantain chips
+- **Zobo Gummies** - Hibiscus-flavored chewy treats
+
+### International Favorites
+- Premium Dark Chocolate (made with Nigerian cocoa)
+- Assorted Gummies and Jellies
+- Hard Candies and Lollipops
+- Gift Hampers and Bulk Orders
 
 ## 🛠️ Tech Stack
 
@@ -33,8 +49,8 @@ A beautiful, modern confectionary web application showcasing premium chocolates,
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/sweet-delights.git
-cd sweet-delights
+git clone https://github.com/yourusername/anifield.git
+cd anifield
 ```
 
 2. Install dependencies:
@@ -60,34 +76,54 @@ The built files will be in the `dist` directory, ready for deployment.
 ## 🎨 Design System
 
 ### Colors
-- **Primary**: Pink to Purple gradient (`from-pink-500 to-purple-600`)
-- **Secondary**: Indigo accents (`indigo-600`)
-- **Background**: Soft pastels (`from-pink-50 via-purple-50 to-indigo-100`)
+- **Primary**: Nigerian Green (`from-green-600 to-green-800`)
+- **Accent**: Natural greens and earth tones
+- **Background**: Clean whites with subtle green tints
 
 ### Typography
 - **Headings**: Dancing Script (elegant script font)
 - **Body**: Inter (clean, readable sans-serif)
 
-### Components
-- Responsive navigation with backdrop blur
-- Animated product cards with hover effects
-- Gradient buttons with shadow effects
-- Professional footer with organized links
+### Nigerian Elements
+- Nigerian flag colors (green and white)
+- Local currency (₦ Naira)
+- Nigerian city names and locations
+- Cultural references and language
 
-## 📱 Responsive Breakpoints
+## 🇳🇬 Nigerian Market Features
 
-- **Mobile**: < 768px
-- **Tablet**: 768px - 1024px
-- **Desktop**: > 1024px
-- **Large Desktop**: > 1440px
+### Delivery Zones
+- **Major Cities**: Lagos, Abuja, Port Harcourt, Kano, Ibadan
+- **Coverage**: All 36 states and FCT
+- **Same-day delivery** available in Lagos and Abuja
+- **Free delivery** for orders above ₦5,000
+
+### Payment Options
+- Debit/Credit Cards (Verve, Mastercard, Visa)
+- Bank Transfers
+- USSD Payments
+- Mobile Money (planned)
+
+### Customer Support
+- WhatsApp Business integration
+- Local phone support
+- Email support in English and Pidgin
+
+## 📱 Mobile Optimization
+
+- **Mobile-first design** - Optimized for Nigerian mobile users
+- **Fast loading** - Optimized for slower internet connections
+- **Touch-friendly** - Large buttons and easy navigation
+- **Offline support** - Basic functionality works offline
 
 ## 🌟 Key Sections
 
-1. **Hero Section** - Eye-catching headline with call-to-action buttons
-2. **Featured Products** - Showcase of premium confections
-3. **Special Offers** - Promotional banner with discount information
-4. **About Section** - Brand story and company values
-5. **Footer** - Complete site navigation and social links
+1. **Hero Section** - Nigerian-themed welcome with local messaging
+2. **Featured Products** - Mix of traditional and modern sweets
+3. **Special Offers** - Nigerian-specific promotions and discounts
+4. **Customer Testimonials** - Reviews from Nigerian customers
+5. **About Section** - Company story with Nigerian heritage
+6. **Footer** - Complete navigation with Nigerian contact info
 
 ## 🔧 Development
 
@@ -109,16 +145,29 @@ src/
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build locally
 
-## 🎯 Future Enhancements
+## 🎯 Nigerian Market Roadmap
 
-- [ ] Shopping cart functionality
-- [ ] Product detail pages
-- [ ] User authentication
-- [ ] Payment integration
-- [ ] Order tracking
-- [ ] Customer reviews
-- [ ] Wishlist feature
-- [ ] Multi-language support
+- [ ] **Payment Integration**
+  - [ ] Paystack integration
+  - [ ] Flutterwave support
+  - [ ] Bank transfer automation
+  
+- [ ] **Delivery Features**
+  - [ ] Real-time tracking
+  - [ ] Multiple delivery partners
+  - [ ] Pickup locations
+  
+- [ ] **Localization**
+  - [ ] Pidgin English support
+  - [ ] Hausa language option
+  - [ ] Yoruba language option
+  - [ ] Igbo language option
+  
+- [ ] **Business Features**
+  - [ ] Bulk order discounts
+  - [ ] Corporate accounts
+  - [ ] Event catering
+  - [ ] Franchise opportunities
 
 ## 🤝 Contributing
 
@@ -137,7 +186,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Images from [Pexels](https://pexels.com) - High-quality stock photography
 - Icons from [Lucide](https://lucide.dev) - Beautiful, customizable icons
 - Fonts from [Google Fonts](https://fonts.google.com) - Web typography
+- Nigerian confectionary traditions and recipes
+
+## 📞 Contact
+
+- **Website**: [anifield.ng](https://anifield.ng)
+- **Email**: hello@anifield.ng
+- **WhatsApp**: +234 901 234 5678
+- **Address**: Victoria Island, Lagos, Nigeria
 
 ---
 
-Made with 💖 and lots of sugar by the Sweet Delights team.
+Made with 💚 in Lagos, Nigeria. Proudly Nigerian! 🇳🇬
