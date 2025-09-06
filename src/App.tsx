@@ -8,6 +8,7 @@ import { About } from "./pages/About";
 import { Shop } from "./pages/Shop";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
+import { Checkout } from "./pages/Checkout";
 
 export const App = (): JSX.Element => {
   return (
@@ -20,6 +21,7 @@ export const App = (): JSX.Element => {
             <Route path="/shop" element={<Shop />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </Layout>
       </CartProvider>

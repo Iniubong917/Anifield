@@ -131,7 +131,7 @@ export const Register = (): JSX.Element => {
             <Button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full bg-gradient-to-r from-coral-500 to-coral-700 hover:from-coral-600 hover:to-coral-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {isLoading ? "Creating Account..." : "Create Account"}
             </Button>
@@ -140,7 +140,7 @@ export const Register = (): JSX.Element => {
           <div className="mt-6 text-center">
             <p className="text-blue-200">
               Already have an account?{" "}
-              <Link to="/login" className="text-green-400 hover:text-green-300 font-medium">
+              <Link to="/login" className="text-coral-400 hover:text-coral-300 font-medium">
                 Sign in here
               </Link>
             </p>
@@ -148,7 +148,7 @@ export const Register = (): JSX.Element => {
 
           <div className="mt-6 pt-6 border-t border-blue-700">
             <div className="text-center text-sm text-blue-300 space-y-1">
-              <p>🇳🇬 Join thousands of happy Nigerian customers</p>
+              <p>🇳🇬 Join thousands of happy customers in Akwa Ibom and beyond</p>
               <p>Free delivery • Secure payments • Fresh guarantee</p>
             </div>
           </div>

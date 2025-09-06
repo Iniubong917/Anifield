@@ -6,23 +6,26 @@ import { useCart } from "../contexts/CartContext";
 const featuredProducts = [
   {
     id: "1",
-    name: "Coconut Candy (Agbon)",
-    description: "Traditional Nigerian coconut sweets",
+    name: "Swiss Dark Chocolate",
+    description: "Premium 70% cocoa Swiss chocolate bars",
     price: 2500,
+    stock: 45,
     image: "https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&w=400"
   },
   {
     id: "2",
-    name: "Premium Dark Chocolate",
-    description: "Rich cocoa from Nigerian farms",
+    name: "Belgian Truffles",
+    description: "Handcrafted Belgian chocolate truffles",
     price: 4800,
+    stock: 23,
     image: "https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=400"
   },
   {
     id: "3",
-    name: "Zobo Gummies",
-    description: "Hibiscus-flavored chewy treats",
+    name: "French Macarons",
+    description: "Delicate French almond macarons",
     price: 1800,
+    stock: 67,
     image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400"
   }
 ];
@@ -40,39 +43,39 @@ export const Home = (): JSX.Element => {
       <section className="py-20 text-center">
         <div className="mb-6">
           <span className="inline-block px-4 py-2 bg-blue-800/50 text-green-400 rounded-full text-sm font-medium mb-4 border border-blue-700">
-            🇳🇬 Proudly Nigerian • Est. 2020
+            🇳🇬 Proudly Nigerian • Akwa Ibom • Est. 2020
           </span>
         </div>
         <h1 className="text-6xl font-bold mb-6 text-white" style={{ fontFamily: 'Dancing Script, cursive' }}>
-          Nigeria's Sweet Paradise
+          International Sweet Paradise
         </h1>
         <p className="text-xl text-blue-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-          From traditional Agbon and Chin Chin to premium chocolates and international treats. 
-          We deliver authentic Nigerian flavors and world-class confections across all 36 states.
+          From Swiss chocolates and Belgian truffles to French macarons and Italian gelato. 
+          We deliver world-class international confections from Akwa Ibom across all 36 states.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <Link to="/shop">
-            <Button className="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
-              Shop Local Sweets
+            <Button className="bg-gradient-to-r from-coral-500 to-coral-700 hover:from-coral-600 hover:to-coral-800 text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
+              Shop International Sweets
             </Button>
           </Link>
           <Link to="/about">
-            <Button variant="outline" className="border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-blue-900 px-8 py-3 text-lg transition-all duration-200">
+            <Button variant="outline" className="border-2 border-coral-400 text-coral-400 hover:bg-coral-400 hover:text-blue-900 px-8 py-3 text-lg transition-all duration-200">
               Learn More
             </Button>
           </Link>
         </div>
         <div className="mt-8 flex justify-center items-center space-x-8 text-sm text-blue-300">
           <div className="flex items-center space-x-2">
-            <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-            <span>Free delivery in Lagos & Abuja</span>
+            <span className="w-2 h-2 bg-coral-400 rounded-full"></span>
+            <span>Free delivery in Akwa Ibom & Abuja</span>
           </div>
           <div className="flex items-center space-x-2">
-            <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+            <span className="w-2 h-2 bg-coral-400 rounded-full"></span>
             <span>Same-day delivery available</span>
           </div>
           <div className="flex items-center space-x-2">
-            <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+            <span className="w-2 h-2 bg-coral-400 rounded-full"></span>
             <span>Pay with card or transfer</span>
           </div>
         </div>
@@ -81,11 +84,11 @@ export const Home = (): JSX.Element => {
       {/* Featured Products */}
       <section className="py-16">
         <h2 className="text-4xl font-bold text-center mb-4 text-white" style={{ fontFamily: 'Dancing Script, cursive' }}>
-          Our Signature Treats
+          International Signature Treats
         </h2>
         <p className="text-center text-blue-200 mb-12 max-w-2xl mx-auto">
-          A perfect blend of traditional Nigerian sweets and international favorites, 
-          crafted with love and delivered fresh to your doorstep.
+          A curated selection of the world's finest confections from Europe, Asia, and the Americas, 
+          imported fresh and delivered to your doorstep in Akwa Ibom and beyond.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {featuredProducts.map((product) => (
@@ -100,13 +103,17 @@ export const Home = (): JSX.Element => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-white">{product.name}</h3>
                 <p className="text-blue-200 mb-4">{product.description}</p>
+                <p className="text-coral-300 text-sm mb-4">
+                  {product.stock > 0 ? `${product.stock} in stock` : 'Out of stock'}
+                </p>
                 <div className="flex justify-between items-center">
-                  <span className="text-2xl font-bold text-green-400">₦{product.price.toLocaleString()}</span>
+                  <span className="text-2xl font-bold text-coral-400">₦{product.price.toLocaleString()}</span>
                   <Button 
                     onClick={() => addToCart(product)}
-                    className="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200"
+                    disabled={product.stock === 0}
+                    className="bg-gradient-to-r from-coral-500 to-coral-700 hover:from-coral-600 hover:to-coral-800 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Add to Cart
+                    {product.stock > 0 ? 'Add to Cart' : 'Out of Stock'}
                   </Button>
                 </div>
               </div>
@@ -115,7 +122,7 @@ export const Home = (): JSX.Element => {
         </div>
         <div className="text-center mt-8">
           <Link to="/shop">
-            <Button variant="outline" className="border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-blue-900 px-6 py-3">
+            <Button variant="outline" className="border-2 border-coral-400 text-coral-400 hover:bg-coral-400 hover:text-blue-900 px-6 py-3">
               View All Products
             </Button>
           </Link>
@@ -124,20 +131,20 @@ export const Home = (): JSX.Element => {
 
       {/* Special Offer Banner */}
       <section className="py-16">
-        <div className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 rounded-3xl p-12 text-center text-white shadow-2xl relative overflow-hidden">
+        <div className="bg-gradient-to-r from-coral-600 via-coral-700 to-coral-800 rounded-3xl p-12 text-center text-white shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
           <h2 className="text-4xl font-bold mb-4" style={{ fontFamily: 'Dancing Script, cursive' }}>
-            Naija Sweet Deal! 🍭
+            International Sweet Deal! 🍭
           </h2>
           <p className="text-xl mb-6 opacity-90">
             Get 25% off your first order when you spend ₦5,000 or more
           </p>
           <p className="text-sm mb-6 opacity-80">
-            Valid for deliveries to Lagos, Abuja, Port Harcourt, Kano, and Ibadan
+            Valid for deliveries to Akwa Ibom, Abuja, Lagos, Port Harcourt, and Kano
           </p>
           <Link to="/shop">
-            <Button className="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
+            <Button className="bg-white text-coral-700 hover:bg-gray-100 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
               Claim Your Discount
             </Button>
           </Link>

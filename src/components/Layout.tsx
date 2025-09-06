@@ -31,7 +31,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
         <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
           <div className="flex items-center space-x-8">
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-700 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-coral-500 to-coral-700 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">A</span>
               </div>
               <div className="text-2xl font-bold text-white" style={{ fontFamily: 'Dancing Script, cursive' }}>
@@ -45,8 +45,8 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
                 <Link
                   key={index}
                   to={item.href}
-                  className={`text-sm font-medium transition-colors duration-200 hover:text-green-400 ${
-                    isActive(item.href) ? 'text-green-400 border-b-2 border-green-400 pb-1' : 'text-white'
+                  className={`text-sm font-medium transition-colors duration-200 hover:text-coral-400 ${
+                    isActive(item.href) ? 'text-coral-400 border-b-2 border-coral-400 pb-1' : 'text-white'
                   }`}
                 >
                   {item.label}
@@ -59,11 +59,11 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
             {/* Cart Button */}
             <button
               onClick={() => setIsCartOpen(true)}
-              className="relative p-2 text-white hover:text-green-400 transition-colors"
+              className="relative p-2 text-white hover:text-coral-400 transition-colors"
             >
               <ShoppingCart className="w-6 h-6" />
               {cartState.itemCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-coral-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   {cartState.itemCount}
                 </span>
               )}
@@ -72,18 +72,18 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
             {/* Auth Buttons */}
             {authState.isAuthenticated ? (
               <div className="flex items-center space-x-2">
-                <span className="text-sm text-green-400">Hello, {authState.user?.name}</span>
+                <span className="text-sm text-coral-400">Hello, {authState.user?.name}</span>
                 <Button
                   onClick={logout}
                   variant="outline"
-                  className="bg-transparent border-green-400 text-green-400 hover:bg-green-400 hover:text-blue-900"
+                  className="bg-transparent border-coral-400 text-coral-400 hover:bg-coral-400 hover:text-blue-900"
                 >
                   Logout
                 </Button>
               </div>
             ) : (
               <Link to="/login">
-                <Button className="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white">
+                <Button className="bg-gradient-to-r from-coral-500 to-coral-700 hover:from-coral-600 hover:to-coral-800 text-white">
                   <User className="w-4 h-4 mr-2" />
                   Login
                 </Button>
@@ -93,7 +93,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 text-white hover:text-green-400"
+              className="md:hidden p-2 text-white hover:text-coral-400"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -109,8 +109,8 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
                   key={index}
                   to={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block text-sm font-medium transition-colors duration-200 hover:text-green-400 ${
-                    isActive(item.href) ? 'text-green-400' : 'text-white'
+                  className={`block text-sm font-medium transition-colors duration-200 hover:text-coral-400 ${
+                    isActive(item.href) ? 'text-coral-400' : 'text-white'
                   }`}
                 >
                   {item.label}
@@ -130,7 +130,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-green-700 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-coral-500 to-coral-700 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold">A</span>
                 </div>
                 <h3 className="text-xl font-bold text-white" style={{ fontFamily: 'Dancing Script, cursive' }}>
@@ -138,39 +138,39 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
                 </h3>
               </div>
               <p className="text-blue-300 text-sm">
-                Nigeria's premier confectionary brand, bringing you the best of local and international sweets.
+                Nigeria's premier confectionary brand, bringing you the best international sweets to Akwa Ibom and beyond.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-green-400">Products</h4>
+              <h4 className="font-semibold mb-4 text-coral-400">Products</h4>
               <ul className="space-y-2 text-blue-300 text-sm">
-                <li>Local Sweets</li>
+                <li>International Chocolates</li>
                 <li>Chocolates</li>
                 <li>Gummies</li>
                 <li>Gift Hampers</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-green-400">Delivery</h4>
+              <h4 className="font-semibold mb-4 text-coral-400">Delivery</h4>
               <ul className="space-y-2 text-blue-300 text-sm">
-                <li>Lagos State</li>
+                <li>Akwa Ibom State</li>
                 <li>FCT Abuja</li>
                 <li>All 36 States</li>
                 <li>Same-day delivery</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-green-400">Contact</h4>
+              <h4 className="font-semibold mb-4 text-coral-400">Contact</h4>
               <ul className="space-y-2 text-blue-300 text-sm">
-                <li>📍 Lagos, Nigeria</li>
-                <li>📞 +234 901 234 5678</li>
-                <li>✉️ hello@anifield.ng</li>
+                <li>📍 Akwa Ibom, Nigeria</li>
+                <li>📞 +2347039486041</li>
+                <li>✉️ anifieldmeldnig@gmail.com</li>
                 <li>💬 WhatsApp Support</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
-            <p>&copy; 2025 Anifield Nigeria. Made with 💚 in Lagos.</p>
+            <p>&copy; 2025 Anifield Nigeria. Made with 🧡 in Akwa Ibom.</p>
           </div>
         </div>
       </footer>

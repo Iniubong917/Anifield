@@ -87,7 +87,7 @@ export const Login = (): JSX.Element => {
             <Button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full bg-gradient-to-r from-coral-500 to-coral-700 hover:from-coral-600 hover:to-coral-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {isLoading ? "Signing In..." : "Sign In"}
             </Button>
@@ -96,7 +96,7 @@ export const Login = (): JSX.Element => {
           <div className="mt-6 text-center">
             <p className="text-blue-200">
               Don't have an account?{" "}
-              <Link to="/register" className="text-green-400 hover:text-green-300 font-medium">
+              <Link to="/register" className="text-coral-400 hover:text-coral-300 font-medium">
                 Sign up here
               </Link>
             </p>

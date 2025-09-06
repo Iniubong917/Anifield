@@ -40,6 +40,18 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        coral: {
+          50: '#fef7f0',
+          100: '#fdeee0',
+          200: '#fad9c1',
+          300: '#f6be97',
+          400: '#f1986b',
+          500: '#ed7748',
+          600: '#de5a2e',
+          700: '#b84525',
+          800: '#933826',
+          900: '#773022',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

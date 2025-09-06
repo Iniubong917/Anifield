@@ -58,7 +58,7 @@ export const Cart = ({ isOpen, onClose }: CartProps): JSX.Element => {
                     />
                     <div className="flex-1">
                       <h3 className="font-medium text-gray-900">{item.name}</h3>
-                      <p className="text-green-600 font-semibold">₦{item.price.toLocaleString()}</p>
+                      <p className="text-coral-600 font-semibold">₦{item.price.toLocaleString()}</p>
                       <div className="flex items-center space-x-2 mt-2">
                         <button
                           onClick={() => updateQuantity(item.id, item.quantity - 1)}
@@ -91,10 +91,13 @@ export const Cart = ({ isOpen, onClose }: CartProps): JSX.Element => {
             <div className="border-t border-gray-200 p-6">
               <div className="flex justify-between items-center mb-4">
                 <span className="text-lg font-semibold text-gray-900">Total:</span>
-                <span className="text-xl font-bold text-green-600">₦{state.total.toLocaleString()}</span>
+                <span className="text-xl font-bold text-coral-600">₦{state.total.toLocaleString()}</span>
               </div>
               <div className="space-y-2">
-                <Button className="w-full bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white">
+                <Button 
+                  onClick={() => window.location.href = '/checkout'}
+                  className="w-full bg-gradient-to-r from-coral-500 to-coral-700 hover:from-coral-600 hover:to-coral-800 text-white"
+                >
                   Checkout
                 </Button>
                 <Button
